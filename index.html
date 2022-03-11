@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/login_form.css">
+    <!-- <link rel="icon" href="./assets/img/logo/sp-logo.png" type="image/gif"/> -->
+    <!-- <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/modal.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+</head>
+<body>
+    <div class="form">
+        <div class="form__overlay"></div>
+
+        <!-- language -->
+        <div class="language">
+            <div class="lang vietLanguage js-vietLang">
+                <img src="./assets/image/icon-language/vietnam.png" alt="VI" class="lang__img">
+                <p class="lang__name">Vietnamese</p>
+            </div>
+            <div class="lang engLanguage js-engLang">
+                <img src="./assets/image/icon-language/english.png" alt="EN" class="lang__img">
+                <p class="lang__name">English</p>
+            </div>
+        </div>
+
+        <!-- container -->
+        <div class="form__container">
+            <!-- header -->
+            <div class="form__header">
+                <div class="header__logo">
+                    <img src="./assets/image/logo/gallery-logo-2.png" alt="logo" class="header__logo-img">
+                    <h3 class="header__logo-name">Website name</h3>
+                </div>
+            </div>
+
+            <!-- btn: sign in - sign up -->
+            <div class="form__body">
+                <div class="header__btn">
+                    <div class="header__login-btn js-header__login-btn">
+                        <p class="header__btn-text language-vi">Đăng nhập</p>
+                        <p class="header__btn-text language-en">Sign in</p>
+                    </div>
+                    <div class="header__signUp-btn js-header__signUp-btn">
+                        <p class="header__btn-text language-vi">Đăng ký</p>
+                        <p class="header__btn-text language-en">Sign up</p>
+                    </div>
+                </div>
+
+                <!-- sign in -->
+                <form class="login-body__container js-login-body__container">
+                    <div class="container__input">
+                        <input type="email" name="email" class="body-input" placeholder="Email address" autofocus required>
+                        <!-- <input type="text" name="username" class="body-input" placeholder="User name" autofocus required> -->
+                        <input type="password" name="password" class="body-input" placeholder="Password" required>
+                    </div>
+                    <a target="_blank" href="#" class="login-form__forgotPassword language-vi">Quên mật khẩu?</a>
+                    <a target="_blank" href="#" class="login-form__forgotPassword language-en">Forgot password?</a>
+                    <div class="login-form__btn">
+                        <input type="submit" value="Đăng nhập" class="login-submit language-vi">
+                        <input type="submit" value="Sign in" class="login-submit language-en">
+                    </div>
+                </form>
+    
+                <!-- sign up -->
+                <form class="signUp-body__container js-signUp-body__container">
+                    <div class="container__input">
+                        <input type="email" name="email" class="body-input" placeholder="Enter your email address" required>
+                        <input type="password" name="password" class="body-input" placeholder="Enter your password" required>
+                        <input type="text" name="username" class="body-input" placeholder="Enter your name" required>
+                    </div>
+                    <div class="login-form__btn">
+                        <input type="submit" value="Đăng ký" class="login-submit language-vi">
+                        <input type="submit" value="Sign up" class="login-submit language-en">
+                    </div>
+                </form>
+            </div>
+            
+            <!-- footer -->
+            <div class="form__footer">
+                <!-- footer sign in -->
+                <div class="footer-login js-footer-login">
+                    <span class="language-vi">
+                        <p language-vi>Tạm thời chưa có nội dung</p>
+                    </span>
+                </div>
+                <div class="footer-login js-footer-login">
+                    <spam class="language-en">
+                        <p language-en>Empty</p>
+                    </spam>
+                </div>
+
+                <!-- footer sign up -->
+                <div class="footer-signUp js-footer-signUp">
+                    <span class="language-vi">
+                        <p>Bằng việc đăng ký tài khoản bạn đã đồng ý với<br> 
+                            <a target="_blank" href="#" class="footer-link text--red">Điều khoản</a> 
+                            & <a target="_blank" href="#" class="footer-link text--red">Dịch vụ</a> 
+                        của chúng tôi.
+                        </p>
+                    </span>
+                    <span class="language-en">
+                        <p>By registering an account you agree to our<br> 
+                            <a target="_blank" href="#" class="footer-link text--red">Terms</a> 
+                            & <a target="_blank" href="#" class="footer-link text--red">Services.</a> 
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="./assets/js/login_form.js"></script>
+</body>
+</html>
